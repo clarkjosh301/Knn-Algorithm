@@ -1,3 +1,4 @@
+#Basic Knn algorithm, data from https://www.kaggle.com/brynja/wineuci
 import pandas as pd
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
@@ -16,3 +17,4 @@ x_new = np.array([[13, 2, 2.4, 15, 100, 2.2, 2.8, .3, 1.5, 4, .93, 2.6, 1000]])
 prediction = knn.predict(x_new)
 print("predicted target: {}".format(
 	y[prediction]))
+#prediction=1 types of wine in the dataset are classified as 1, 2, and 3
